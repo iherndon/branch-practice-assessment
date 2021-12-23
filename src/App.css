@@ -1,42 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
-  color: blue;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 0;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 1000px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid lightgray;
+  padding-left: 15px;
+}
+
+.row p:last-child,
+.row h4:last-child {
+  width: 150px;
+}
+
+.data:hover {
+  background: #e2e2e2;
+}
+
+.input-row {
+  border-bottom: none;
+  padding-left: 0;
+}
+
+input,
+button {
+  height: 30px;
+}
+
+input {
+  width: 700px;
+}
+
+button {
+  width: 100px;
+  background: white;
+  color: green;
+  border-color: green;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  color: gray;
+  border-color: gray;
+}
+
+h4 {
+  color: gray;
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
